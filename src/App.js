@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
-import About from './Components/Pages/About'
+// import About from './Components/Pages/About'
 import LatestPhotos from './Components/LatestPhotos'
 
 class App extends Component {
@@ -17,6 +17,7 @@ class App extends Component {
                   <h2>Latest Photos </h2>
                   <div className="row">
                       <LatestPhotos />
+
                   </div>
                 </div>
               </div>

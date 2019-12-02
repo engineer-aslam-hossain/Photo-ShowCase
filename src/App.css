@@ -82,7 +82,6 @@ h2 {
 }
 
 .single-photo-item h5 {
-    margin-top: 21px;
     text-transform: uppercase;
     margin-bottom: 0px;
 }
@@ -90,7 +89,9 @@ h2 {
 .single-photo-item a {
     color: #333;
 }
-
+.single-photo-item{
+    margin-bottom: 40px;
+}
 p.cat-name {
     opacity: .5;
     font-size: 90%;
@@ -120,4 +121,14 @@ p.cat-name {
 
 .copyright-text {
     margin-bottom: 50px;
+}
+
+.photo-wrapper {
+    height: 190px;
+    margin-bottom: 15px;
+}
+.photo-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
