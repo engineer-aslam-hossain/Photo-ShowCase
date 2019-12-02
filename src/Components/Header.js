@@ -6,10 +6,10 @@ export default class Header extends Component {
             <header className="header" >
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-4 my-auto">
+                        <div className="col col-auto my-auto">
                             <a href="/" className="logo">PhotoShowCase</a>                           
                         </div>
-                        <div className="col-lg-4 my-auto text-center">
+                        <div className="col my-auto text-right">
                             <div className="mainmenu">
                                 <ul>
                                     <li><a href="/">Home</a></li>
@@ -19,12 +19,7 @@ export default class Header extends Component {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-4 my-auto text right">
-                            <form action="">
-                                <input type="text" placeholder="Search Keyword" />
-                                <input type="submit" value="search" />
-                            </form>
-                        </div>
+
                     </div>
                 </div>
             </header>
