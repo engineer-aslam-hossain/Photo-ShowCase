@@ -25,9 +25,26 @@ export default class Photo extends Component {
 
     render() {
         console.log(this.state.photo);
+        let photo = this.state.photo
               return (
             <div>
-                <h2>afadfaffaf</h2>
+                    {photo.description ? <h2>{photo.description} </h2> : ''}
+                <div className="single-photo-wrapper">
+                    <div className="single-photo-info">
+
+
+                        <ul>
+                            <li><label htmlFor="Uploaded_by ">Uploaded by - </label> {photo.user &&photo.user.first_name } {photo.user &&photo.user.last_name }</li>
+
+                            {photo.updated_at ?<li><label htmlFor="Uploaded_date ">Uploaded date -  </label>  {photo.updated_at} </li>:''}
+                            
+
+                            <li><label htmlFor="Camera_model ">Camera model - </label> { photo.exif && photo.exif.model } </li>
+                        </ul>
+                        <a href={photo.links && photo.links.download} download>Download</a>
+                    </div>
+                    <img src={photo.urls && photo.urls.full} alt=""/>
+                </div>
             </div>
         )
     }

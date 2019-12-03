@@ -135,3 +135,35 @@ p.cat-name {
 .top-heading {
     margin-bottom: 40px ;
 }
+
+.single-photo-wrapper{
+    position: relative;
+}
+.single-photo-info{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    background: #fff;
+    padding: 30px;
+    font-size: 20px;
+}
+.single-photo-info ul{
+    font-size: 85%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.single-photo-info li{
+    border-bottom: 1px solid #ddd;
+
+}
+.single-photo-info a{
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 7px 30px;
+    font-size: 12px;
+    margin-top: 21px;
+}
+
