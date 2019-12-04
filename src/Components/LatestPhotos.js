@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
+
 export default class LatestPhotos extends Component {
 
     state = {
@@ -123,7 +124,7 @@ searchQuery = (e) => {
                 this.state.photos.map ((photo) =>(
                     <div key ={photo.id}  className="col-lg-3">
                     <div className="single-photo-item" >
-                        <a className="d-block" href="/">
+                        <a className="d-block" href={'photo?id='+photo.id } >
                             <div className ="photo-wrapper" >
                                  <img src={photo.urls.small} alt={photo.id} />
                             </div>
